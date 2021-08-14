@@ -1,5 +1,5 @@
 <template>
-  <v-app dark id="inspire">
+  <v-app dark id="inspire" style="">
     <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
@@ -28,13 +28,13 @@
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
       <v-btn v-on="on" icon>
-        <v-badge content="2" value="2" color="green" overlap>
+        <v-badge content="2" value="2" color="info" overlap>
           <v-icon>mdi-bell</v-icon>
         </v-badge>
       </v-btn>
       <NuxtLink to="/cart" class="v-btn">
         <v-btn v-on="on" icon>
-          <v-badge content="2" value="2" color="green" overlap>
+          <v-badge content="2" value="2" color="info" overlap>
             <v-icon>mdi-cart</v-icon>
           </v-badge>
         </v-btn>
@@ -156,3 +156,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.v-application {
+  font-family: 'Prompt', sans-serif;
+}
+</style>

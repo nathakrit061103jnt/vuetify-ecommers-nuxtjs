@@ -49,8 +49,8 @@
         </NuxtLink>
 
         <v-menu open-on-hover offset-y>
-          <template v-slot:activator="{ on }">
-            <v-btn v-on="on">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn v-on="on" v-bind="attrs">
               <span>Shop</span>
             </v-btn>
           </template>
@@ -141,11 +141,11 @@ export default {
       //   }
       // ],
       items: [
-        { title: 'T-Shirts', to: '/product' },
-        { title: 'Jackets', to: '/product' },
-        { title: 'Shirts', to: '/product' },
-        { title: 'Jeans', to: '/product' },
-        { title: 'Shoes', to: '/product' },
+        { title: 'T-Shirts' },
+        { title: 'Jackets' },
+        { title: 'Shirts' },
+        { title: 'Jeans' },
+        { title: 'Shoes' },
       ],
       activeBtn: 1,
       miniVariant: false,
@@ -153,6 +153,11 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js',
     }
+  },
+  methods: {
+    onClick() {
+      // Perform an action
+    },
   },
 }
 </script>

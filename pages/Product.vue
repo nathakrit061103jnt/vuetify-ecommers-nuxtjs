@@ -330,17 +330,17 @@ export default {
       {
         text: 'Home',
         disabled: false,
-        href: 'breadcrumbs_home',
+        to: '/',
       },
       {
         text: 'Clothing',
         disabled: false,
-        href: 'breadcrumbs_clothing',
+        to: '/',
       },
       {
         text: 'T-Shirts',
         disabled: true,
-        href: 'breadcrumbs_shirts',
+        to: '/',
       },
     ],
     item: 5,

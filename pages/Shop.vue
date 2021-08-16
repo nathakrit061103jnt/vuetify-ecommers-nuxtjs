@@ -141,7 +141,7 @@
                         "
                         style="height: 100%"
                       >
-                        <v-btn v-if="hover" href="/product" class="" outlined
+                        <v-btn v-if="hover" to="/product" class="" outlined
                           >VIEW</v-btn
                         >
                       </div>
@@ -149,9 +149,9 @@
                   </v-img>
                   <v-card-text class="text--primary">
                     <div>
-                      <a href="/product" style="text-decoration: none">{{
+                      <NuxtLink to="/product" style="text-decoration: none">{{
                         pro.name
-                      }}</a>
+                      }}</NuxtLink>
                     </div>
                     <div>${{ pro.price }}</div>
                   </v-card-text>
@@ -194,17 +194,17 @@ export default {
       {
         text: 'Home',
         disabled: false,
-        href: 'breadcrumbs_home',
+        to: '/',
       },
       {
         text: 'Clothing',
         disabled: false,
-        href: 'breadcrumbs_clothing',
+        to: '/',
       },
       {
         text: 'T-Shirts',
         disabled: true,
-        href: 'breadcrumbs_shirts',
+        to: '/',
       },
     ],
     min: 0,
